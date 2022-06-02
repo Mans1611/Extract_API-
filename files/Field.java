@@ -1,13 +1,13 @@
 package files;
 
 public class Field  {
-    String name,aloowedValues,input,mandatory;
+    String name,allowedValues,input,mandatory;
 
     Field(){}
-    Field(String input,String name,String aloowedValues , String mandatory){
+    Field(String input,String name,String allowedValues , String mandatory){
         this.name = name;
         this.mandatory = mandatory;
-        this.aloowedValues = aloowedValues;
+        this.allowedValues = allowedValues;
         this.input = input;
     }
     public String getName() {
@@ -17,11 +17,11 @@ public class Field  {
     public void setName(String name) {
         this.name = name;
     }
-    public String getAloowedValues() {
-        return aloowedValues;
+    public String getallowedValues() {
+        return allowedValues;
     }
-    public void setAloowedValues(String aloowedValues) {
-        this.aloowedValues = aloowedValues;
+    public void setallowedValues(String allowedValues) {
+        this.allowedValues = allowedValues;
     }
     public String input() {
         return this.input;
@@ -35,5 +35,11 @@ public class Field  {
     public void setMandatory(String mandatory) {
         this.mandatory = mandatory;
     }
+    @Override 
+    public String toString(){
+        String[] arr = this.getName().split("/"); // object1/feilds
+        String varr = arr[arr.length-1];                // to return the last elements before dash "/".
+        return varr;
+    } 
 
 }
