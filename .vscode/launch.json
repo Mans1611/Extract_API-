@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "files.test",
+            "projectName": "Project_66ae2d91",
+            "console": "externalTerminal"
+        },
+        {
+            "type": "java",
+            "name": "Launch mans",
+            "request": "launch",
+            "mainClass": "files.mans",
+            "projectName": "Project_66ae2d91",
+            "console": "externalTerminal"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}",
+            "console": "externalTerminal"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Project_66ae2d91",
+            "console": "externalTerminal"
+        }
+    ]
+}

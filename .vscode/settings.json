@@ -1,0 +1,37 @@
+{   
+        "java.project.referencedLibraries": [
+            "lib/**/*.jar",
+            "C:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\commons-collections4-4.1.jar",
+            "C:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\poi-3.17",
+            "C:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\poi-ooxml-schemas-3.17.jar",
+            "C:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\xmlbeans-2.6.0.jar",
+            "C:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\commons-collections4-4.4",
+            "C:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\commons-compress-1.21",
+            "C:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\commons-io-2.11.0",
+            "C:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\commons-math3-3.6.1",
+            "C:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\curvesapi-1.07",
+            "C:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\log4j-api-2.17.2",
+            "C:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\poi-5.2.2",
+            "C:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\poi-ooxml-5.2.2",
+            "C:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\poi-ooxml-lite-5.2.2",
+            "c:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\commons-codec-1.15.jar",
+            "c:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\commons-collections4-4.4.jar",
+            "c:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\commons-compress-1.21.jar",
+            "c:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\commons-io-2.11.0.jar",
+            "c:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\commons-math3-3.6.1.jar",
+            "c:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\curvesapi-1.07.jar",
+            "c:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\log4j-api-2.17.2.jar",
+            "c:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\poi-5.2.2.jar",
+            "c:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\poi-ooxml-5.2.2.jar",
+            "c:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\poi-ooxml-lite-5.2.2.jar",
+            "c:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\SparseBitSet-1.2.jar",
+            "c:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jar_files\\xmlbeans-5.0.3.jar",
+            "c:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jars\\log4j-core-2.17.2.jar",
+            "c:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jars\\log4j-core-2.17.2-javadoc.jar",
+            "c:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jars\\log4j-core-2.17.2-sources.jar",
+            "c:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\project lib\\jars\\log4j-core-2.17.2-tests.jar"
+        ],
+        "java.dependency.packagePresentation": "flat",
+        
+
+}
