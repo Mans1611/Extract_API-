@@ -7,6 +7,7 @@ public class App {
     private String name;
     App(){
         this.name = "Api Application"; // default constructor;
+        this.apis = new ArrayList<>();
     }
 
     public ArrayList<API> getApis() {
@@ -15,6 +16,9 @@ public class App {
 
     public void setApis(ArrayList<API> apis) {
         this.apis = apis;
+    }
+    public void addApi(API api){
+        this.apis.add(api);
     }
     
 }

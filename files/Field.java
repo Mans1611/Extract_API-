@@ -1,13 +1,14 @@
 package files;
 
 public class Field  {
-    String name,aloowedValues,input;
-    
-    boolean mandatory;
+    String name,aloowedValues,input,mandatory;
+
     Field(){}
-    Field(String name,boolean mandatory){
+    Field(String input,String name,String aloowedValues , String mandatory){
         this.name = name;
         this.mandatory = mandatory;
+        this.aloowedValues = aloowedValues;
+        this.input = input;
     }
     public String getName() {
         return this.name;
@@ -28,10 +29,10 @@ public class Field  {
     public void setInput(String input) {
         this.input = input;
     }
-    public boolean isMandatory() {
+    public String isMandatory() {
         return mandatory;
     }
-    public void setMandatory(boolean mandatory) {
+    public void setMandatory(String mandatory) {
         this.mandatory = mandatory;
     }
 
