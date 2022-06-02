@@ -54,7 +54,7 @@ public class Main{
                 while(!nextRow){
                     Row row = rows.next();
 
-                    Iterator <Cell> cells = row.cellIterator();    // making a cell   
+                    //Iterator <Cell> cells = row.cellIterator();    // making a cell   
                     
                     if(row.getCell(0) == null){
                         break;
@@ -62,14 +62,22 @@ public class Main{
                     
                     if(row.getCell(0).getStringCellValue().contains(apiName)){
                         
-                        row = rows.next();   // to get the next row 
+                        //row = rows.next();   // to get the next row 
                         api = new API(apiName);
+                        while(rows.hasNext()){
+                            row = rows.next();
+                            
+                            if(row.getCell(0) != null){
+                                if(row.getCell(0).getStringCellValue().contains("I/o")){
+                                    nextRow = true;
+                                    break;
+                                }
+                            }
+                            
+                            // break;
+                        }
                     }
 
-                    else if(row.getCell(0).getStringCellValue().equals("I/o")){
-                        nextRow = true;
-                        break;
-                    }
 
                 }
 
@@ -89,29 +97,37 @@ public class Main{
                         nextRow = false;
                         break;  
                     }
+                    if(row.getCell(2) !=null){
 
+                    
                     if(!(row.getCell(2).getStringCellValue().contains("string"))){  //
                         
                         Objects obj = new Objects(row.getCell(0).getStringCellValue(),row.getCell(1).getStringCellValue(),row.getCell(4).getStringCellValue()); 
                         row = rows.next();
-                        while(row.getCell(2).getStringCellValue().contains("string")){
-                            // System.out.println(row.getCell(3).getStringCellValue());
-
-                            String allowedValues;
-                            if(row.getCell(3).getStringCellValue().isEmpty()){
-                                allowedValues = "Any value";
+                       
+                            while(row.getCell(2).getStringCellValue().contains("string")){
+                                // System.out.println(row.getCell(3).getStringCellValue());
+    
+                                String allowedValues;
+                                if(row.getCell(3).getStringCellValue().isEmpty()){
+                                    allowedValues = "Any value";
+                                }
+                                else{
+                                    allowedValues = row.getCell(3).getStringCellValue();
+                                }
+    
+                                field = new Field(row.getCell(0).getStringCellValue(), row.getCell(1).getStringCellValue(), allowedValues, row.getCell(4).getStringCellValue());
+                                obj.addField(field);
+                                if(rows.hasNext()){
+                                    row = rows.next();
+                                }
                             }
-                            else{
-                                allowedValues = row.getCell(3).getStringCellValue();
-                            }
+                        
 
-                            field = new Field(row.getCell(0).getStringCellValue(), row.getCell(1).getStringCellValue(), allowedValues, row.getCell(4).getStringCellValue());
-                            obj.addField(field);
-                            row = rows.next();
-                        }
                         api.addObject(obj);
 
                     }
+                }
                 }
 
             }
@@ -196,23 +212,5 @@ public class Main{
 }
 
 
-class test{
-    public static void  main(String[] args){
-        try{
-            Main read = new Main();
-            API api = read.readExcelFile("C:\\Users\\hp\\Desktop\\Mans1611\\University\\Advanced Computer Programming\\Project\\data\\api.xlsx","API_NAME");    
-            
-            api.print();
 
-        }
-        catch(IOException err){
-            System.out.println(err);}
-
-        catch(Error err){
-            System.out.println(err);
-        }
-
-        
-    }
-}
 

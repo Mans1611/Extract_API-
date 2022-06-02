@@ -47,11 +47,13 @@ public class API {
     public ArrayList<Objects> getObjects() {
         return objects;
     }
-
+    
     public void print(){
         System.out.println(this.getName());
+
         for(Objects obj:this.objects){
-            System.out.println(obj.toString());
+            System.out.print(obj.toString());                 // print the name of the object 
+            System.out.print(obj.getMandotroy()+ "\t");
             for(Field field:obj.getFields()){
                 System.out.print(field.toString()+ "\t");
                 System.out.print(field.input()+ "\t");

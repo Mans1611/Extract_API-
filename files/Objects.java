@@ -27,7 +27,7 @@ public class Objects {
         this.input = input;
     }
 
-    public String getName() {
+    private String getName() {
         return name;
     }
 
